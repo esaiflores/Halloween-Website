@@ -50,3 +50,5 @@ function calculateChristmasCountdown() {
 
 
 }
+
+calculateChristmasCountdown();
