@@ -21,5 +21,13 @@ function calculateChristmasCountdown() {
     var nextChristmasDate = nextChristmasYear + '-12-25T00:00:00.000Z';
     var christmasDay = new Date(nextChristmasDate);
 
+    //Get the difference in seconds between the two days.
+    var diffSeconds = Math.floor((christmasDay.getTime() - now.getTime()) / 1000);
+
+    var days = 0;
+    var hours = 0;
+    var minutes = 0;
+    var seconds = 0;
+
 
 }
