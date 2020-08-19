@@ -46,5 +46,7 @@ function calculateChristmasCountdown() {
     document.getElementById('minutes').innerHTML = minutes + ' Minutes';
     document.getElementById('seconds').innerHTML = seconds + ' Seconds';
 
+    setTimeout(calculateChristmasCountdown, 1000);
+
 
 }
