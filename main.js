@@ -29,5 +29,17 @@ function calculateChristmasCountdown() {
     var minutes = 0;
     var seconds = 0;
 
+    //Don't calculate the time left if it is Christmas day.
+    if(currentMonth != 12 || (currentMonth == 12 && currentDay != 25)){
+        //Convert these seconds into days, hours, minutes, seconds.
+        days = Math.floor(diffSeconds / (3600*24));
+        diffSeconds  -= days * 3600 * 24;
+        hours   = Math.floor(diffSeconds / 3600);
+        diffSeconds  -= hours * 3600;
+        minutes = Math.floor(diffSeconds / 60);
+        diffSeconds  -= minutes * 60;
+        seconds = diffSeconds;
+    }
+
 
 }
