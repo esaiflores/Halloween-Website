@@ -41,5 +41,10 @@ function calculateChristmasCountdown() {
         seconds = diffSeconds;
     }
 
+    document.getElementById('days').innerHTML = days + ' Days';
+    document.getElementById('hours').innerHTML = hours + ' Hours';
+    document.getElementById('minutes').innerHTML = minutes + ' Minutes';
+    document.getElementById('seconds').innerHTML = seconds + ' Seconds';
+
 
 }
